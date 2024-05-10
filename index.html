@@ -14,6 +14,7 @@
             padding: 20px;
             text-align: center;
         }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -37,16 +38,45 @@
             <h1>Ejemplos de objetos 2D en canvas</h1>
         </div>
         <div class="d-flex flex-row shadow-sm mb-2 border p-3 justify-content-around">
-            <canvas class="border shadow" id="canvasRectangle" width="150" height="150"></canvas>
+            <div class="me-4 shadow border rounded-3">
+                <h4 style="text-align: center;">Rectangulo</h4>
+                    <canvas id="canvasRectangle" width="150" height="150"></canvas>
+            </div>
+            <div class="me-4 shadow border rounded-3">
+                <h4 style="text-align: center;">Triángulo</h4>
+                    <canvas id="canvasTriangle" width="150" height="150"></canvas>
+            </div>
+            <div class="me-4 shadow border rounded-3">
+                <h4 style="text-align: center;">Pluma</h4>
+                    <canvas id="canvasFeather" width="150" height="150"></canvas>
+            </div>
+            <div class="me-4 shadow border rounded-3">
+                <h4 style="text-align: center;">Líneas</h4>
+                    <canvas id="canvasLines" width="150" height="150"></canvas>
+            </div>
+            <div class="me-4 shadow border rounded-3">
+                <h4 style="text-align: center;">Arcos</h4>
+                    <canvas id="canvasArcos" width="150" height="150"></canvas>
+            </div>
+            <!-- 
             <canvas class="border shadow" id="canvasTriangle" width="150" height="150"></canvas>
             <canvas class="border shadow" id="canvasFeather" width="150" height="150"></canvas>
             <canvas class="border shadow" id="canvasLines" width="150" height="150"></canvas>
-            <canvas class="border shadow" id="canvasArcos" width="150" height="150"></canvas>
-            
+            <canvas class="border shadow" id="canvasArcos" width="150" height="150"></canvas> 
+            -->
+
         </div>
-        <div class="d-flex flex-row shadow-sm mb-2 border p-3 justify-content-start-between">
-            <canvas class="border shadow" id="canvasCurvas" width="150" height="150"></canvas><span>&nbsp;</span><span>&nbsp;</span>
-            <canvas class="border shadow" id="canvasCubicas" width="150" height="150"></canvas>
+        <div class="d-flex flex-row shadow-sm mb-2 border p-3 justify-content-left">
+            <div class="me-4 shadow border rounded-3">
+                <h4 style="text-align: center;">Curvas</h4>
+                    <canvas id="canvasCurvas" width="150" height="150"></canvas>
+            </div>
+            <div class="me-4 shadow border rounded-3">
+                <h4 style="text-align: center;">Cúbicas</h4>
+                    <canvas id="canvasCubicas" width="150" height="150"></canvas>
+            </div>
+            <!-- <canvas class="border shadow" id="canvasCurvas" width="150" height="150"></canvas>
+            <canvas class="border shadow" id="canvasCubicas" width="150" height="150"></canvas> -->
         </div>
     </main>
 

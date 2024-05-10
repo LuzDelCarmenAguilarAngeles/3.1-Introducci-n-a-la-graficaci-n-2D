@@ -19,7 +19,7 @@ function drawRectangle() {
 function drawTriangle() {
     const ctx = canvasTriangle.getContext("2d");
     if (canvasTriangle.getContext) {
-        ctx.fillStyle = "green";
+        ctx.fillStyle = "blue";
         ctx.beginPath();
         ctx.moveTo(25, 100);
         ctx.lineTo(125, 100);
@@ -33,6 +33,7 @@ function drawFeather() {
         const ctx = canvasFeather.getContext("2d");
         //ctx.strokeStyle("green")
         ctx.beginPath();
+        ctx.strokeStyle='blue';
         ctx.arc(75, 75, 50, 0, Math.PI * 2, true); // Círculo externo
         ctx.moveTo(110, 75);
         ctx.arc(75, 75, 35, 0, Math.PI, false); // Boca (en el sentido de las agujas del reloj)
@@ -50,6 +51,7 @@ function drawLines() {
 
         const ctx = canvasLines.getContext("2d");
 
+        ctx.fillStyle='blue';
         // Triángulo relleno
         ctx.beginPath();
         ctx.moveTo(25, 25);
@@ -57,6 +59,7 @@ function drawLines() {
         ctx.lineTo(25, 105);
         ctx.fill();
 
+        ctx.strokeStyle='blue';
         // Triángulo contorneado
         ctx.beginPath();
         ctx.moveTo(125, 125);
@@ -74,6 +77,8 @@ function drawArcos() {
 
         for (let i = 0; i < 4; i++) {
             for (let j = 0; j < 3; j++) {
+                ctx.fillStyle='blue';
+                ctx.strokeStyle='blue';
                 ctx.beginPath();
                 const x = 25 + j * 50; // Coordenada x
                 const y = 25 + i * 50; // Coordenada y
@@ -97,6 +102,7 @@ function drawArcos() {
 function drawCurvasCuadraticasdeBezier() {
     if (canvasCurvas.getContext) {
         const ctx = canvasCurvas.getContext("2d");
+        ctx.strokeStyle='blue';
 
         // Ejemplo de curvas cuadráticas
         ctx.beginPath();
@@ -114,6 +120,7 @@ function drawCurvasCuadraticasdeBezier() {
 function drawCurvasCubicasdeBezier() {
     if (canvasCubicas.getContext) {
       const ctx = canvasCubicas.getContext("2d");
+      ctx.fillStyle='blue';
   
       // Ejemplo de curvas cúbicas
       ctx.beginPath();
